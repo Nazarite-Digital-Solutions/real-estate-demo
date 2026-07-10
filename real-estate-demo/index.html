@@ -6,7 +6,7 @@
     
     <title>Luxury Real Estate in South Africa | Aurelia Estates Demo</title>
     <meta name="description" content="Discover luxury homes, exclusive estates and premium properties across South Africa with Aurelia Estates. Find your dream home today.">
-    <link rel="canonical" href="#">
+    <link rel="canonical" href="https://real-estate-demo.nazaritedigitalsolutions.workers.dev/">
     
     <meta name="robots" content="noindex, nofollow">
     
@@ -28,6 +28,10 @@
       body { font-family: "Poppins", sans-serif; overflow-x: hidden; }
       
       html, body { background: black; }
+      
+      :root {
+        --header-offset: 8rem;
+      }
       
 /* ─────────────────────────────────────────────────── DEMO BANNER ────────────────────────────────────────────────── */
 
@@ -300,6 +304,10 @@
       }
       
 /* ───────────────────────────────────────────────────── HERO ─────────────────────────────────────────────────────── */
+      
+      section {
+        scroll-margin-top: var(--header-offset);
+      }
       
       .hero {
         position: relative;
