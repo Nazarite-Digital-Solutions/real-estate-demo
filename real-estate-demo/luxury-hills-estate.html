@@ -25,17 +25,13 @@
 
       body{ background: black; color: white; line-height: 1.7; font-family: "Poppins", sans-serif; }
       
-      :root {
-        --demo-banner-height: 2.8rem;
-      }
-      
 /* ─────────────────────────────────────────────────── DEMO BANNER ────────────────────────────────────────────────── */
 
       .demo-banner {
         position: fixed;
         top: 0;
         left: 0;
-        height: var(--demo-banner-height);
+        min-height: 2.8rem;
         width: 100%;
         z-index: 1100;
         background: #000;
@@ -76,11 +72,23 @@
         margin: 0 0.5rem;
       }
       
+      @media (max-width: 700px) {
+        .demo-banner {
+          min-height: 4rem;
+          padding: .8rem 1rem;
+        }
+
+        .demo-banner p {
+          font-size: .72rem;
+          line-height: 1.4;
+        }
+      }
+      
 /* ──────────────────────────────────────────────────── HEADER ────────────────────────────────────────────────────── */
     
       .navbar {
         position: fixed;
-        top: var(--demo-banner-height);
+        top: 2.8rem;
         left: 0;
         width: 100%;
         z-index: 1000;
@@ -163,21 +171,13 @@
         transition: .35s;
       }
 
-      .nav-links a:hover::after {
-        width: 100%;
-      }
+      .nav-links a:hover::after { width: 100%; }
 
-      .nav-links a:hover {
-        color: #C8A95B;
-      }
+      .nav-links a:hover { color: #C8A95B; }
       
-      .nav-links a.active {
-        color: #C8A95B;
-      }
+      .nav-links a.active { color: #C8A95B; }
 
-      .nav-links a.active::after {
-        width: 100%;
-      }
+      .nav-links a.active::after { width: 100%; }
 
       .nav-contact-button {
         padding: 12px 24px;
@@ -191,9 +191,7 @@
         color: black;
       }
 
-      .nav-contact-button:hover::after {
-        width: 0;
-      }
+      .nav-contact-button:hover::after { width: 0; }
       
       .hamburger {
         display: none;
@@ -212,17 +210,11 @@
         transition: .35s;
       }
       
-      .hamburger.active span:nth-child(1){
-        transform:rotate(45deg) translateY(11px);
-      }
+      .hamburger.active span:nth-child(1) { transform:rotate(45deg) translateY(11px); }
 
-      .hamburger.active span:nth-child(2){
-        opacity:0;
-      }
+      .hamburger.active span:nth-child(2) { opacity:0; }
 
-      .hamburger.active span:nth-child(3){
-        transform:rotate(-45deg) translateY(-11px);
-      }
+      .hamburger.active span:nth-child(3) { transform:rotate(-45deg) translateY(-11px); }
 
       /* RESPONSIVE */
       
@@ -250,7 +242,10 @@
 
         .nav-links.active { right: 0; }
         
-        .navbar { padding: 18px 0; }
+        .navbar { 
+          padding: 18px 0; 
+          top: 4rem; 
+        }
 
         .container { width: min(94%, 1300px); }
 
@@ -301,9 +296,7 @@
       
 /* ──────────────────────────────────────────────── PROPERTY SECTION ──────────────────────────────────────────────── */
 
-      section {
-        padding: 80px 8%;
-      }
+      section { padding: 80px 8%; }
 
       h2 {
         font-size: 2.5rem;
