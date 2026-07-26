@@ -1088,6 +1088,19 @@
         border: 1px solid rgba(255,255,255,.08);
       }
 
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        clip-path: inset(50%);
+        white-space: nowrap;
+        border: 0;
+      }
+
       .contact-form input,
       .contact-form select,
       .contact-form textarea {
@@ -1728,27 +1741,34 @@
 
         <form class="contact-form" action="thank-you.html" method="post">
 
+          <label for="full_name" class="sr-only">Full Name</label>
           <input
+            id="full_name"
             type="text"
             name="full_name"
             autocomplete="name"
             placeholder="Full Name"
             required>
 
+          <label for="email" class="sr-only">Email Address</label>
           <input
+            id="email"
             type="email"
             name="email"
             autocomplete="email"
             placeholder="Email Address"
             required>
 
+          <label for="phone" class="sr-only">Phone Number</label>  
           <input
+            id="phone"
             type="tel"
             name="phone"
             autocomplete="tel"
             placeholder="Phone Number">
 
-          <select name="enquiry_type" required>
+          <label for="enquiry_type" class="sr-only">I'm Interested In</label>
+          <select id="enquiry_type" name="enquiry_type" required>
 
             <option value="">I'm Interested In</option>
 
@@ -1762,7 +1782,9 @@
 
           </select>
 
+          <label for="message" class="sr-only">Message</label>
           <textarea
+            id="message"
             name="message"
             autocomplete="off"
             rows="6"
