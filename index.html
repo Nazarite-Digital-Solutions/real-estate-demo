@@ -82,14 +82,16 @@
 
       .demo-banner a {
         color: #C8A95B;
-        text-decoration: none;
-        transition: color .3s ease;
+        text-decoration: underline;
+        text-decoration-color: rgba(200,169,91,.45);
+        text-underline-offset: 3px;
+        transition: color .3s ease, text-decoration-color .3s ease;
       }
 
       .demo-banner a:hover,
       .demo-banner a:focus {
         color: white;
-        text-decoration: underline;
+        text-decoration-color: white;
       }
 
       .separator {
@@ -931,9 +933,10 @@
         border: 3px solid #C8A95B;
       }
 
-      .testimonial-author h4 {
+      .testimonial-author .testimonial-name {
         margin-bottom: 6px;
         font-size: 1.15rem;
+        font-weight: 600;
       }
 
       .testimonial-author span {
@@ -973,7 +976,7 @@
           height: 65px;
         }
 
-        .testimonial-author h4 { font-size: 1.1rem; }
+        .testimonial-author .testimonial-name { font-size: 1.1rem; }
 
         .testimonial-author span { font-size: 0.85rem; }
       }
@@ -1009,7 +1012,7 @@
           height: 60px;
         }
 
-        .testimonial-author h4 { font-size: 1rem; }
+        .testimonial-author .testimonial-name { font-size: 1rem;}
 
         .testimonial-author span { font-size: 0.8rem; }
       }
@@ -1610,7 +1613,7 @@
 
             <div>
 
-              <h4>Sarah Thompson</h4>
+              <p class="testimonial-name">Sarah Thompson</p>
 
               <span>Homeowner</span>
 
@@ -1641,7 +1644,7 @@
 
             <div>
 
-              <h4>Michael Roberts</h4>
+              <p class="testimonial-name">Michael Roberts</p>
 
               <span>Property Seller</span>
 
