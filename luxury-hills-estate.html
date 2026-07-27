@@ -56,22 +56,6 @@
         font-display: swap;
       }
 
-      @font-face {
-        font-family: "Playfair Display";
-        src: url("fonts/PlayfairDisplay-SemiBold.woff2") format("woff2");
-        font-weight: 600;
-        font-style: normal;
-        font-display: swap;
-      }
-
-      @font-face {
-        font-family: "Playfair Display";
-        src: url("fonts/PlayfairDisplay-Bold.woff2") format("woff2");
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-      }
-
 /* ─────────────────────────────────────────────────── DEMO BANNER ────────────────────────────────────────────────── */
 
       .demo-banner {
@@ -104,14 +88,16 @@
 
       .demo-banner a {
         color: #C8A95B;
-        text-decoration: none;
-        transition: color .3s ease;
+        text-decoration: underline;
+        text-decoration-color: rgba(200,169,91,.45);
+        text-underline-offset: 3px;
+        transition: color .3s ease, text-decoration-color .3s ease;
       }
 
       .demo-banner a:hover,
       .demo-banner a:focus {
         color: white;
-        text-decoration: underline;
+        text-decoration-color: white;
       }
 
       .separator {
