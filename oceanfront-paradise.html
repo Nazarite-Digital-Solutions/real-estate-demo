@@ -88,14 +88,16 @@
 
       .demo-banner a {
         color: #C8A95B;
-        text-decoration: none;
-        transition: color .3s ease;
+        text-decoration: underline;
+        text-decoration-color: rgba(200,169,91,.45);
+        text-underline-offset: 3px;
+        transition: color .3s ease, text-decoration-color .3s ease;
       }
 
       .demo-banner a:hover,
       .demo-banner a:focus {
         color: white;
-        text-decoration: underline;
+        text-decoration-color: white;
       }
 
       .separator {
@@ -729,143 +731,147 @@
     
 <!-- ────────────────────────────────────────────── PROPERTY SECTION ─────────────────────────────────────────────── -->
 
-    <!-- HERO -->
+    <main id="main-content">
 
-    <section class="hero">
+      <!-- HERO -->
+
+      <section class="hero">
       
-      <picture class="hero-image">
-        <source srcset="property-1-hero.webp" type="image/webp">
-        <img src="property-1-hero.jpg" alt="Exterior view of Oceanfront Paradise" width="1920" height="1280">
-      </picture>
+        <picture class="hero-image">
+          <source srcset="property-1-hero.webp" type="image/webp">
+          <img src="property-1-hero.jpg" alt="Exterior view of Oceanfront Paradise" width="1920" height="1280">
+        </picture>
       
-      <div class="hero-overlay"></div>
+        <div class="hero-overlay"></div>
 
-      <div class="hero-content">
+        <div class="hero-content">
 
-        <h1>Oceanfront Paradise</h1>
+          <h1>Oceanfront Paradise</h1>
 
-        <p class="location">Cape Town, South Africa</p>
+          <p class="location">Cape Town, South Africa</p>
 
-        <p class="price">R18 900 000</p>
+          <p class="price">R18 900 000</p>
+
+          <a href="index.html#contact" class="button">Contact Us</a>
+
+        </div>
+
+      </section>
+
+      <!-- GALLERY -->
+
+      <section>
+
+        <h2>Property Gallery</h2>
+
+        <div class="gallery">
+
+          <picture>
+            <source srcset="property-1.webp" type="image/webp">
+            <img src="property-1.jpg" alt="Exterior view of Oceanfront Paradise" width="640" height="427">
+          </picture>
+
+          <picture>
+            <source srcset="property-1-image-2.webp" type="image/webp">
+            <img src="property-1-image-2.jpg" alt="Luxury bathroom with freestanding bathtub overlooking the ocean" width="640" height="960">
+          </picture>
+
+          <picture>
+            <source srcset="property-1-image-3.webp" type="image/webp">
+            <img src="property-1-image-3.jpg" alt="Spacious bedroom with panoramic ocean views" width="640" height="853">
+          </picture>
+
+          <picture>
+            <source srcset="property-1-image-4.webp" type="image/webp">
+            <img src="property-1-image-4.jpg" alt="Modern open-plan lounge with elegant furnishings" width="640" height="427">
+          </picture>
+
+        </div>
+
+      </section>
+
+      <!-- DESCRIPTION -->
+
+      <section class="description-section">
+
+        <h2>Property Description</h2>
+
+        <div class="description">
+
+          <p>
+            Oceanfront Paradise is a spectacular luxury villa situated on one of Cape Town's
+            most exclusive coastlines. Featuring spacious open-plan living, premium finishes,
+            floor-to-ceiling windows and breathtaking ocean views, this home offers the
+            perfect blend of elegance, comfort and modern living.
+          </p>
+
+        </div>
+
+      </section>
+
+      <!-- FEATURES -->
+
+      <section class="feature-section">
+
+        <h2>Property Features</h2>
+
+        <div class="features">
+
+          <div class="feature">✓ 5 Bedrooms</div>
+
+          <div class="feature">✓ 4 Bathrooms</div>
+
+          <div class="feature">✓ 620 m²</div>
+
+          <div class="feature">✓ Swimming Pool</div>
+
+          <div class="feature">✓ Cinema Room</div>
+
+          <div class="feature">✓ Smart Home</div>
+
+          <div class="feature">✓ Double Garage</div>
+
+          <div class="feature">✓ Ocean Views</div>
+
+        </div>
+
+      </section>
+
+      <!-- AMENITIES -->
+
+      <section class="amenities-section">
+
+        <h2>Nearby Amenities</h2>
+
+        <div class="amenities">
+
+          <div class="amenity">🏫 Schools</div>
+
+          <div class="amenity">🛍 Shopping</div>
+
+          <div class="amenity">✈ Airport</div>
+
+          <div class="amenity">🏖 Beach</div>
+
+          <div class="amenity">🍽 Restaurants</div>
+
+        </div>
+
+      </section>
+
+      <!-- CONTACT -->
+
+      <section class="contact">
+
+        <h2>Interested in this Property?</h2>
+
+        <p style="margin-bottom:35px;">Contact one of our luxury property consultants today to arrange a private viewing.</p>
 
         <a href="index.html#contact" class="button">Contact Us</a>
 
-      </div>
+      </section>
 
-    </section>
-
-    <!-- GALLERY -->
-
-    <section>
-
-      <h2>Property Gallery</h2>
-
-      <div class="gallery">
-
-        <picture>
-          <source srcset="property-1.webp" type="image/webp">
-          <img src="property-1.jpg" alt="Exterior view of Oceanfront Paradise" width="640" height="427">
-        </picture>
-
-        <picture>
-          <source srcset="property-1-image-2.webp" type="image/webp">
-          <img src="property-1-image-2.jpg" alt="Luxury bathroom with freestanding bathtub overlooking the ocean" width="640" height="960">
-        </picture>
-
-        <picture>
-          <source srcset="property-1-image-3.webp" type="image/webp">
-          <img src="property-1-image-3.jpg" alt="Spacious bedroom with panoramic ocean views" width="640" height="853">
-        </picture>
-
-        <picture>
-          <source srcset="property-1-image-4.webp" type="image/webp">
-          <img src="property-1-image-4.jpg" alt="Modern open-plan lounge with elegant furnishings" width="640" height="427">
-        </picture>
-
-      </div>
-
-    </section>
-
-    <!-- DESCRIPTION -->
-
-    <section class="description-section">
-
-      <h2>Property Description</h2>
-
-      <div class="description">
-
-        <p>
-          Oceanfront Paradise is a spectacular luxury villa situated on one of Cape Town's
-          most exclusive coastlines. Featuring spacious open-plan living, premium finishes,
-          floor-to-ceiling windows and breathtaking ocean views, this home offers the
-          perfect blend of elegance, comfort and modern living.
-        </p>
-
-      </div>
-
-    </section>
-
-    <!-- FEATURES -->
-
-    <section class="feature-section">
-
-      <h2>Property Features</h2>
-
-      <div class="features">
-
-        <div class="feature">✓ 5 Bedrooms</div>
-
-        <div class="feature">✓ 4 Bathrooms</div>
-
-        <div class="feature">✓ 620 m²</div>
-
-        <div class="feature">✓ Swimming Pool</div>
-
-        <div class="feature">✓ Cinema Room</div>
-
-        <div class="feature">✓ Smart Home</div>
-
-        <div class="feature">✓ Double Garage</div>
-
-        <div class="feature">✓ Ocean Views</div>
-
-      </div>
-
-    </section>
-
-    <!-- AMENITIES -->
-
-    <section class="amenities-section">
-
-      <h2>Nearby Amenities</h2>
-
-      <div class="amenities">
-
-        <div class="amenity">🏫 Schools</div>
-
-        <div class="amenity">🛍 Shopping</div>
-
-        <div class="amenity">✈ Airport</div>
-
-        <div class="amenity">🏖 Beach</div>
-
-        <div class="amenity">🍽 Restaurants</div>
-
-      </div>
-
-    </section>
-
-    <!-- CONTACT -->
-
-    <section class="contact">
-
-      <h2>Interested in this Property?</h2>
-
-      <p style="margin-bottom:35px;">Contact one of our luxury property consultants today to arrange a private viewing.</p>
-
-      <a href="index.html#contact" class="button">Contact Us</a>
-
-    </section>
+    </main>
     
     <footer class="footer">
 
