@@ -28,10 +28,6 @@
     <meta name="application-name" content="Aurelia Estates Demo Website">
 
     <meta name="author" content="Nazarite Digital Solutions">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="preload" as="image" href="property-2-hero.webp">
     
@@ -44,6 +40,22 @@
 
       body{ background: black; color: white; line-height: 1.7; font-family: "Poppins", sans-serif; }
       
+      @font-face {
+        font-family: "Poppins";
+        src: url("fonts/Poppins-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Playfair Display";
+        src: url("fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
 /* ─────────────────────────────────────────────────── DEMO BANNER ────────────────────────────────────────────────── */
 
       .demo-banner {
