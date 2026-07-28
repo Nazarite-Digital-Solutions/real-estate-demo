@@ -29,7 +29,7 @@
 
     <meta name="author" content="Nazarite Digital Solutions">
     
-    <link rel="preload" as="image" href="property-2-hero.webp">
+    <link rel="preload" as="image" href="property-2-hero-desktop.webp" imagesrcset="property-2-hero-mobile.webp 900w, property-2-hero-desktop.webp 1920w" imagesizes="100vw" fetchpriority="high">
     
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -420,17 +420,13 @@
         gap: 20px;
       }
       
-      .gallery picture {
+      .gallery img {
         display: block;
-        overflow: hidden;
-        border-radius: 15px;
-      }
-
-      .gallery picture img {
         width: 100%;
         height: 220px;
         object-fit: cover;
-        display: block;
+        overflow: hidden;
+        border-radius: 15px;
       }
 
       /* ---------- DESCRIPTION ---------- */
@@ -572,7 +568,7 @@
           gap: 25px;
         }
 
-        .gallery picture img { height: 260px; }
+        .gallery img { height: 260px; }
 
         .description { max-width: 100%; }
 
@@ -738,8 +734,8 @@
       <section class="hero">
       
         <picture class="hero-image">
-          <source srcset="property-2-hero.webp" type="image/webp">
-          <img src="property-2-hero.jpg" alt="Exterior view of Skyline Penthouse" width="1920" height="1280">
+          <source  media="(max-width: 768px)" srcset="property-2-hero-mobile.webp" type="image/webp">
+          <img src="property-2-hero-desktop.webp" alt="Exterior view of Skyline Penthouse" width="1920" height="1280" fetchpriority="high" loading="eager" decoding="async">
         </picture>
       
         <div class="hero-overlay"></div>
@@ -766,25 +762,13 @@
 
         <div class="gallery">
 
-          <picture>
-            <source srcset="property-2.webp" type="image/webp">
-            <img src="property-2.jpg" alt="Exterior view of Skyline Penthouse" width="640" height="427">
-          </picture>
+          <img src="property-2.webp" alt="Exterior view of Skyline Penthouse" width="800" height="546">
 
-          <picture>
-            <source srcset="property-2-image-2.webp" type="image/webp">
-            <img src="property-2-image-2.jpg" alt="Modern open-plan dining room and kitchen" width="639" height="480">
-          </picture>
+          <img src="property-2-image-2.webp" alt="Modern open-plan dining room and kitchen" width="800" height="533">
 
-          <picture>
-            <source srcset="property-2-image-3.webp" type="image/webp">
-            <img src="property-2-image-3.jpg" alt="Luxury lounge with panoramic city skyline views" width="640" height="427">
-          </picture>
+          <img src="property-2-image-3.webp" alt="Luxury lounge with panoramic city skyline views" width="800" height="533">
 
-          <picture>
-            <source srcset="property-2-image-4.webp" type="image/webp">
-            <img src="property-2-image-4.jpg" alt="Modern luxury bathroom with premium finishes" width="640" height="427">
-          </picture>
+          <img src="property-2-image-4.webp" alt="Modern luxury bathroom with premium finishes" width="800" height="533">
 
         </div>
 
